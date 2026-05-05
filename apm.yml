@@ -1,0 +1,9 @@
+name: ai-stack
+version: 1.0.0
+description: Personal AI agent configuration and tools
+author: Artem Garanin
+dependencies:
+  apm: []
+  mcp: []
+includes: auto
+scripts: {}
