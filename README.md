@@ -5,7 +5,7 @@ Personal APM package with AI agent tools.
 ## Tools
 
 - Perplexity MCP Server: web research via `@perplexity-ai/mcp-server`. Requires `PERPLEXITY_API_KEY`.
-- Context7 MCP Server: up-to-date code documentation via `io.github.upstash/context7`.
+- Context7 MCP Server: up-to-date code documentation via `@upstash/context7-mcp@latest`.
 - Playwright MCP Server: browser automation via `@playwright/mcp@latest`, configured for headed mode.
 - Obsidian CLI Skill: vault search, notes, backlinks, tags, tasks, properties, daily notes, bases, and templates via `obsidian` CLI.
 
@@ -20,6 +20,12 @@ brew install apm
 echo 'export PERPLEXITY_API_KEY="your_key_here"' >> ~/.zshrc
 source ~/.zshrc
 apm install agaranin/ai-stack
+```
+
+For reproducible installs, pin the package to a tag or commit SHA:
+
+```sh
+apm install agaranin/ai-stack#<tag-or-sha>
 ```
 
 ### Linux

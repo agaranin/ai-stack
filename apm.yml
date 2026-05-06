@@ -14,7 +14,13 @@ dependencies:
     - '@perplexity-ai/mcp-server'
     env:
       PERPLEXITY_API_KEY: ${PERPLEXITY_API_KEY}
-  - io.github.upstash/context7
+  - name: context7
+    registry: false
+    transport: stdio
+    command: npx
+    args:
+    - -y
+    - '@upstash/context7-mcp@latest'
   - name: playwright
     registry: false
     transport: stdio
