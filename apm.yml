@@ -4,6 +4,25 @@ description: Personal AI agent configuration and tools
 author: Artem Garanin
 dependencies:
   apm: []
-  mcp: []
+  mcp:
+  - name: perplexity
+    registry: false
+    transport: stdio
+    command: npx
+    args:
+    - -y
+    - '@perplexity-ai/mcp-server'
+    env:
+      PERPLEXITY_API_KEY: ''
+  - io.github.upstash/context7
+  - name: playwright
+    registry: false
+    transport: stdio
+    command: npx
+    args:
+    - -y
+    - '@playwright/mcp@latest'
+    env:
+      PLAYWRIGHT_MCP_HEADLESS: 'false'
 includes: auto
 scripts: {}
